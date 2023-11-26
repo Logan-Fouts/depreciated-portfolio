@@ -17,6 +17,10 @@ img {
   margin-right: 3vw;
 }
 
+#Links a:hover {
+  color: rgb(9, 204, 9);
+}
+
 @media (max-width: 400px) {
   nav {
     flex-direction: column;
