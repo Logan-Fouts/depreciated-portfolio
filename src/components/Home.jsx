@@ -19,7 +19,7 @@ function Home() {
           technologies. - 3D Printing Enthusiast: Bringing digital designs to
           life in the physical world.Explore my portfolio to see my latest
           projects, get to know me, and get in touch if you would like. Happy
-          coding!
+          coding! -Logan Fouts
         </p>
       </div>
     </div>
