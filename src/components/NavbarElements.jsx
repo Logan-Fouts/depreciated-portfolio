@@ -17,7 +17,7 @@ NavLink.propTypes = {
 };
 
 const NavbarElements = [
-  <NavLink key="home" to="/home" label="Home" />,
+  <NavLink key="home" to="/" label="Home" />,
   <NavLink key="about" to="/about" label="About" />,
   <NavLink key="projects" to="/projects" label="Projects" />,
   <NavLink key="contact" to="/contact" label="Contact" />,
