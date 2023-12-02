@@ -12,10 +12,23 @@
 
 #Content {
   margin-left: 100px;
+  text-align: center;
+  padding: 50px;
 }
 
-@media (max-width: 600px) {
+p {
+  text-align: left;
+}
+
+@media (max-width: 800px) {
   #HomeContainer {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #Content {
+    margin: auto;
   }
 }

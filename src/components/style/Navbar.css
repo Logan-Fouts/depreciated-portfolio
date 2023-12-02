@@ -9,20 +9,51 @@ nav {
 
 img {
   width: 50px;
-  padding-left: 20px;
+  padding-left: 1vw;
 }
 
 #Links {
   display: flex;
   margin-right: 3vw;
+  justify-content: flex-end;
 }
 
 #Links a:hover {
   color: rgb(9, 204, 9);
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
+  #Links {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: width 0.5s;
+    padding-top: 60px;
+  }
+
   nav {
     flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #openButton {
+    padding: 0;
+    padding-left: 5px;
+  }
+
+  #openButton:hover {
+    transform: scale(1.1);
+  }
+
+  #closeButton {
+    position: absolute;
+    right: 10px;
+    top: 30px;
   }
 }
