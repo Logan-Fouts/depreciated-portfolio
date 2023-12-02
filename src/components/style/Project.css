@@ -16,7 +16,8 @@
 }
 
 #mainImage {
-  width: 400px;
+  width: 50vw;
+  max-width: 800px;
   margin-top: 0;
   padding-right: 20px;
   object-fit: contain;

@@ -67,4 +67,8 @@ h2 {
   #detailsContent {
     flex-direction: column;
   }
+
+  #detailsContent h3 {
+    padding-left: 0
+  }
 }
