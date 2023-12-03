@@ -1,0 +1,33 @@
+name: Build and Deploy
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Build
+      run: 
+        npm install
+        npm run build
+
+    - name: Copy to Build Branch
+      run:
+        git checkout gh-pages
+        git rm -rf .
+        cp -r build/. .
+        git add .
+        git commit -m "Auto-build and deploy"
+
+    - name: Push to gh-pages
+      run:
+        git config user.email "actions@github.com"
+        git config user.name "GitHub Actions"
+        git push origin gh-pages
