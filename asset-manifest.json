@@ -1,17 +1,20 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.114c7331.css",
-    "main.js": "/portfolio/static/js/main.36187e30.js",
+    "main.css": "/portfolio/static/css/main.be2156c1.css",
+    "main.js": "/portfolio/static/js/main.59be08db.js",
+    "static/media/streamdeck.jpg": "/portfolio/static/media/streamdeck.e443a851c43a243663f2.jpg",
     "static/media/picpurge.gif": "/portfolio/static/media/picpurge.0e07f6c45856a10725e4.gif",
+    "static/media/keyboard.png": "/portfolio/static/media/keyboard.00b0ab346b537fdc16aa.png",
     "static/media/phash.png": "/portfolio/static/media/phash.073b72c6c4d53470b960.png",
+    "static/media/pydeckGUI.png": "/portfolio/static/media/pydeckGUI.20e607483a7b05093d51.png",
     "static/media/me.png": "/portfolio/static/media/me.cfa7e5cd59e0cb7fc451.png",
     "static/media/logo.png": "/portfolio/static/media/logo.c283b909f3ead6655de5.png",
     "index.html": "/portfolio/index.html",
-    "main.114c7331.css.map": "/portfolio/static/css/main.114c7331.css.map",
-    "main.36187e30.js.map": "/portfolio/static/js/main.36187e30.js.map"
+    "main.be2156c1.css.map": "/portfolio/static/css/main.be2156c1.css.map",
+    "main.59be08db.js.map": "/portfolio/static/js/main.59be08db.js.map"
   },
   "entrypoints": [
-    "static/css/main.114c7331.css",
-    "static/js/main.36187e30.js"
+    "static/css/main.be2156c1.css",
+    "static/js/main.59be08db.js"
   ]
 }
