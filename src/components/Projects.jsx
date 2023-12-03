@@ -92,7 +92,7 @@ function Projects() {
               practicality but also infuses a creative touch, allowing users to
               personalize their workspace with precision and innovation.
               Assembling this keyboard becomes a dynamic journey, where each
-              component contributes to a seamlessly integrated and
+              component contributes to a nicely integrated and
               technologically advanced solution for an enriched user experience.
             </p>
           </div>
