@@ -18,16 +18,24 @@ jobs:
         npm install
         npm run build
 
-    - name: Copy to Build Branch
-      run:
-        git checkout gh-pages
-        git rm -rf .
-        cp -r build/. .
-        git add .
-        git commit -m "Auto-build and deploy"
+    - name: Check if gh-pages branch exists
+      run: |
+        if [[ -z $(git ls-remote --heads origin gh-pages) ]]; then
+          git checkout --orphan gh-pages
+        else
+          git checkout gh-pages
+        fi
 
-    - name: Push to gh-pages
-      run:
+    - name: Clear existing content
+      run: git rm -rf .
+
+    - name: Copy to Build Branch
+      run: cp -r build/. .
+
+    - name: Commit and Push
+      run: |
         git config user.email "actions@github.com"
         git config user.name "GitHub Actions"
+        git add .
+        git commit -m "Auto-build and deploy"
         git push origin gh-pages
