@@ -19,9 +19,8 @@ jobs:
         npm run build
 
     - name: Check if gh-pages branch exists
-      run: |
-          git fetch
-          git checkout gh-pages
+      run:
+          git checkout -B gh-pages origin/gh-pages
 
 
     - name: Clear existing content
