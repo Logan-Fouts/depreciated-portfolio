@@ -20,10 +20,10 @@ jobs:
 
     - name: Check if gh-pages branch exists
       run: |
-        if [[ -z $(git ls-remote --heads origin gh-pages) ]]; then
-          git checkout --orphan gh-pages
-        else
+        if git show-ref --quiet refs/remotes/origin/gh-pages; then
           git checkout gh-pages
+        else
+          git checkout --orphan gh-pages
         fi
 
     - name: Clear existing content
