@@ -19,7 +19,8 @@ jobs:
         npm run build
 
     - name: Check if gh-pages branch exists
-      run:
+      run: |
+          git fetch
           git checkout gh-pages
 
 
